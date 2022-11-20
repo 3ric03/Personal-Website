@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content = "width=device-width, initial-scale = 1.0">
+            <title>Eric Chen Personal Website</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+           
+            <script src="https://kit.fontawesome.com/7855ac60f8.js" crossorigin="anonymous"></script>
+
+            <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" 
+            rel="stylesheet">
+            
+            <link rel="stylesheet" href = "css/styles.css">
+    </head>
+        <body>
+    
+            <header>
+                <div class = "logo typewriter">
+                   <h1>welcome!</h1>
+                </div>
+                <button class = "nav-toggle" aria-label="toggle navigation">
+                    <span class ="hamburger"></span>
+                </button>
+                <nav class = "nav">
+                    <ul class = "nav__list">
+                        <li class = "nav__item"><a href="#home" class = "nav__link">Home</a></li>
+                        <li class = "nav__item"><a href="#services" class = "nav__link">My Services</a></li>
+                        <li class = "nav__item"><a href="#about" class = "nav__link">About Me</a></li>
+                        <li class = "nav__item"><a href="#work" class = "nav__link">My Experiences</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Intro-->
+            <section class = "intro" id = "home">
+                <h1 class = "section__title section__title--intro">
+                    Hey! I am <strong>Eric Chen</strong>
+                </h1>
+                <p class = "section__subtitle section__subtitle--intro">Computer Engineering @ uoft</p>
+                <img class = "intro__img", src = "img/TitlePic.jpg"> <!--insert photo of me-->
+            </section>
+            <!-- My Services -->
+            <section class = "my-services " id = "services" >
+                <h2 class = "section__title section__title--services">What I do</h2>
+                <div class = "services reveal">
+                    <div class = "service">
+                        <h3>C/C++ and Python Development</h3>
+                        <p> In my course-work, I used C/C++ to develop a Reversi-Algorithm and Inventory Management Systenm. With Python,
+                             I used the PyGame Library to develop an Obastacle Dodger game with a UI and score tracker. These projects can be found in my Github!</p>
+                    </div>
+                    <div class = "service" >
+                        <h3>Web Development</h3>
+                        <p class = "web"> In Summer 2022, I developed a website for a small business as a final project for a online course. To ensure mobile compatibility,
+                            I utilized Twitter Bootstrap and JQuery. In the near future, I will begin a course on nodeJS and other backend technologies. </p>
+
+                    </div>
+
+                    <div class = "service">
+                        <h3>Circuitry and Digital Systems</h3>
+                        <p> In the fall semester, I will be learning Verilog, Sequential and Combinational Logic, and the design & implementation of finite state machines
+                            . I will also be completing laboratory work with 
+                            Field-Programmable Gate Arrays.  More to come :)</p>
+
+                    </div>
+                </div>
+                <a href = "#work" class = "btn">My Resume</a>
+            </section>
+            
+            <!-- About Me -->
+            <section class = "about-me reveal" id = "about">
+                <h2 class = "section__title section__title--about">I am a 2nd year undergrad student</h2>
+                <p class = "section__subtitle section__subtitle--about">Currently seeking Summer 2023 Internships!</p>
+
+                <div class = "about-me__body">
+                    <p> Hey! My name is Eric, I'm a 2nd year Computer Engineering student at the University of Toronto.
+                        I have interests in a career in Full-Stack Developement, Data Science, and AI! I'm not adept at all those 
+                        fields yet, but I'm working hard to get there!
+                    
+                      </p>
+                    <p>
+                        I worked at the Engineering Outreach Office in the past summer. My role was to acclimate incoming students to University Academics, as well as 
+                        co-leading a Professional Development Coding Camp for Grade 1-8 Public School Teachers.
+                       
+                    </p>
+                    <p>
+                        At UofT, I'm currently the Propulsion & Levitation Project Manager in the Hyperloop Team (UTHT). I'm also an active member of SKULE
+                        Badminton Club. 
+                    </p>
+                </div>
+
+                <img src = "img/IMG_4296 3.jpg" class = "about-me__img"> <!--second image of myself-->
+                <a href=""class="returnTop">RETURN</a>
+            </section>
+
+            <!--My Experiences/Work-->
+            <section class = "my-work reveal" id = "work">
+                <h2 class = "section__title">My Work</h2>
+                <p class = "section__subtitle section__subtitle--work" >
+
+                </p>
+                
+
+                <div class = "portfolio">
+                    <a target=”_blank href="https://github.com/3ric03" class = "portfolio__item">
+                        <img class = "portfolio__img" src = "img/github.png ">
+                    </a>
+                    <a target=”_blank href="https://github.com/3ric03" class = "portfolio__item">
+                        <img class = "portfolio__img" src = "img/resume_img.png ">
+                    </a>
+                    <a href="#" class = "portfolio__item">
+                        <img class = "portfolio__img" src = "img/coming_soon.png ">
+                    </a>
+                </div>
+            </section>
+            <footer class = "footer">
+                <!--email-->
+                <ul class = "social-list">
+                    <li class= "social-list__item">
+                        <a target=”_blank class = "social-list__link" href = "mailto:ericchen647@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                    <a target=”_blank class = "social-list__link" href="https://www.linkedin.com/in/eric-chen-2802a2188/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    </li>
+                </ul>
+            </footer>
+            <script src = "js/script.js"></script>
+        </body>
+
+</html>
